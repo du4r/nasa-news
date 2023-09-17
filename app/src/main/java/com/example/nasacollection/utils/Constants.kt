@@ -6,6 +6,6 @@ import androidx.annotation.RequiresApi
 class Constants {
     companion object{
         const val API_KEY = "?api_key=MtJrvZGyHRNZM58De3B6L7BELsLgyfnHaoFJxFaF"
-        const val BASE_URL = "https://api.nasa.gov/planetary/apod/"
+        const val BASE_URL = "https://api.nasa.gov/planetary/"
     }
 }

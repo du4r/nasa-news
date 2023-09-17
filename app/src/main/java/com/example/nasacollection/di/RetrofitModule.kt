@@ -1,6 +1,7 @@
 package com.example.nasacollection.di
 
 import com.example.nasacollection.data.NasaApi
+import com.example.nasacollection.utils.Constants.Companion.API_KEY
 import com.example.nasacollection.utils.Constants.Companion.BASE_URL
 import com.example.nasacollection.utils.TodayDate
 import dagger.Module
@@ -28,5 +29,6 @@ object RetrofitModule {
     fun provideUserApi(retrofit: Retrofit): NasaApi{
         return retrofit.create(NasaApi::class.java)
     }
+
 
 }

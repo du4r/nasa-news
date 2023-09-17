@@ -6,6 +6,6 @@ import retrofit2.Response
 import retrofit2.http.GET
 
 interface NasaApi {
-    @GET(API_KEY)
+    @GET("apod$API_KEY")
     suspend fun getData(): Response<NasaData>
 }

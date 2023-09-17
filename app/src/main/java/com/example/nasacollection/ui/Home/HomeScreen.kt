@@ -15,6 +15,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Close
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ElevatedButton
 import androidx.compose.material3.Icon
@@ -61,23 +62,29 @@ fun HomeScreen(){
 
 @Composable
 fun ShowError(error: List<String>){
-    Column (modifier = Modifier.fillMaxSize()){
+    Column (modifier = Modifier
+        .fillMaxSize()
+        .background(Color.Black),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally){
         Icon(
-            imageVector = Icons.Default.Close,
+            imageVector = Icons.Filled.Info,
             contentDescription = "Error icon",
-            modifier = Modifier.size(32.dp)
+            modifier = Modifier
+                .size(32.dp)
+                .background(Color.White),
         )
-        Text(text = "Oops... something is Wrong...",
+        Spacer(modifier = Modifier.height(8.dp))
+        Text(text = "Oops... something is Wrong!",
             style = TextStyle(
-                fontSize = 32.sp
+                fontSize = 32.sp,
+                color = Color.White
             ))
-        Text(text = error.toString(),
+        Spacer(modifier = Modifier.height(8.dp))
+        Text(text = "Please, restart the app, and check your network connection!",
             style = TextStyle(
-                fontSize = 24.sp
-            ))
-        Text(text = "Please, restart the app",
-            style = TextStyle(
-                fontSize = 32.sp
+                fontSize = 24.sp,
+                color = Color.White
             ))
     }
 }
