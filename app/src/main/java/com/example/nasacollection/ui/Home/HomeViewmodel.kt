@@ -4,10 +4,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.nasacollection.domain.GetCollectionUseCase
 import com.example.nasacollection.domain.item.CollectionItem
-import com.example.nasacollection.models.NasaData
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -26,7 +24,6 @@ class HomeViewmodel @Inject constructor(private val getCollectionUseCase: GetCol
 
     fun getCollections(){
         viewModelScope.launch {
-
                 try {
                     val req = getCollectionUseCase()
                     _collection.value = req
@@ -35,7 +32,6 @@ class HomeViewmodel @Inject constructor(private val getCollectionUseCase: GetCol
                     erros.add(e.message.toString())
                     errorBody.value = erros
                 }
-
         }
     }
 }
