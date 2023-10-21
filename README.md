@@ -18,7 +18,7 @@ Compose UI
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 <img src="https://github.com/du4r/nasa-news/blob/main/screeshots/Screenshot_20231021_181804.png" width="250"> |
-<img src="https://github.com/du4r/instagram-clone/blob/main/screenshots/Screenshot_20230713_223744.png" width="250"> |
+<img src="https://github.com/du4r/nasa-news/blob/main/screeshots/Screenshot_20231021_184606.png" width="250"> |
 <img src="https://github.com/du4r/nasa-news/blob/main/screeshots/Screenshot_20231021_184831.png" width="250"> |
 
 
