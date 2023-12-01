@@ -1,4 +1,4 @@
-# Clone do Instagram (em Desenvolvimento)
+# App de Noticias Diarias da Nasa (em Desenvolvimento)
 
 
 ### Arquitetura e Tecnologia:
